@@ -1,0 +1,102 @@
+/* General styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+/* Links row */
+.links {
+    margin-bottom: 10px;
+}
+
+.links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Horizontal line */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 25px 0;
+}
+
+.pre-accepts {
+    display: block;
+    font-size: 0.9em;       /* slightly smaller than main text */
+    color: #555;            /* lighter than main text */
+    margin-top: 0.2em;      /* small vertical gap from links */
+}
+
+
+
+/* About section */
+.about {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/* Publications */
+.publications p {
+    margin-bottom: 20px;
+}
+
+.publications a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.publications a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image {
+        max-width: 200px;
+    }
+}
+
